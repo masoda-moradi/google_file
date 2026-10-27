@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 272px;
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            width: 90%;
+            max-width: 600px;
+
+            display: flex;
+            align-items: center;
+
+            border: 1px solid #dfe1e5;
+            border-radius: 30px;
+
+            padding: 5px;
+        }
+
+        .search-box input {
+            flex: 1;
+
+            border: none;
+            outline: none;
+
+            padding: 12px;
+
+            font-size: 16px;
+
+            direction: rtl;
+        }
+
+        .search-box button {
+            border: none;
+
+            background: #4285f4;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+        }
+
+        .search-box button:hover {
+            background: #3367d6;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img
+        class="logo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google"
+    >
+
+    <form
+        class="search-box"
+        action="https://www.google.com/search"
+        method="GET"
+    >
+
+        <input
+            type="text"
+            name="q"
+            placeholder="جستجو در گوگل..."
+        >
+
+        <button type="submit">
+            جستجو
+        </button>
+
+    </form>
+
+</body>
+
+</html>
